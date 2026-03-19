@@ -478,22 +478,6 @@
     <div class="filter-tabs" id="filter-tabs"></div>
     <div class="card-grid" id="curated-grid"></div>
 
-    <hr class="section-divider" />
-
-<hr class="section-divider" />
-<div class="section-label">💰 Latest from The Freebie Guy</div>
-<div class="section-sub">Live deals pulled directly from thefreebieguy.com</div>
-<div class="card-grid" id="tfg-grid"></div>
-```
-
-**Step 3:** Find the `loadReddit()` function call inside `runSearch()`:
-```
-await loadReddit();
-```
-Change it to:
-```
-await loadReddit();
-await loadFreebieGuy();
     
     <div class="section-label">🔥 Live from r/freefood</div>
     <div class="section-sub">Real deals posted by real people. Updated every time you search.</div>
